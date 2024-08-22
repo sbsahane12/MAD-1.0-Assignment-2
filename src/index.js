@@ -1,9 +1,13 @@
 import {createRoot} from "react-dom/client";
-import GreetingHours from "./App";
+import MorningGreeting ,{AfternoonGreeting,EveningGreeting}from "./App";
 
 const root = createRoot(document.getElementById("root"));
 
 
 root.render(
-    <GreetingHours name="Sagar"/>
+    <>
+        <MorningGreeting name="Sagar"/>
+        <AfternoonGreeting name="Sagar1"/>
+        <EveningGreeting name="Sagar2"/>
+    </>
 );
